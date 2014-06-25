@@ -39,12 +39,14 @@ and open the template in the editor.
 
        <h1>SyntaxHihglighter Test</h1>
 <p>This is a test file to insure that everything is working well.</p>
-
+<?php
+        $clase =file_get_contents('/var/www/html/blue_print/blueprint/class/minimailchimp.php');
+        $clase_limpia =  trim($clase,"<?php"); 
+?>
 <pre class="brush: php;">
-function test() : String
-{
-	return 10;
-}
+<?php
+echo $clase_limpia
+?>
 </pre>
 
     </body>
