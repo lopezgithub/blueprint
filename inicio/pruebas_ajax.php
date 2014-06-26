@@ -33,38 +33,38 @@ and open the template in the editor.
             <link type="text/css" rel="stylesheet" href="../includes/syntaxhighlighter_2.1.382/styles/shThemeDefault.css"/>
             <script type="text/javascript">
                 SyntaxHighlighter.config.clipboardSwf = '../includes/syntaxhighlighter_2.1.382/scripts/clipboard.swf';
-   
+
 
             </script>
-      
-           <script type="text/javascript" src="../includes/jquery/jquery-2.1.1.min.js"></script>
+
+            <script type="text/javascript" src="../includes/jquery/jquery-2.1.1.min.js"></script>
         </title>
     </head>
     <body>
 
         <script>
 
-            function myCall() {
-                 $.ajax({
-type: "POST",
-url: "../php/captura.php",
-data: { url_archivo:'../class/minimailchimp.php' }
-})
-.done(function( msg ) {
-$('#codigo').hide(function (){
-               
-            });
-  $( "#codigo >pre" ).text( msg );
-  SyntaxHighlighter.highlight();
-  $('#codigo').show(function (){
-               
-            });
-});
-            }
+                function myCall() {
+                    $.ajax({
+                        type: "POST",
+                        url: "../php/captura.php",
+                        data: {url_archivo: '../class/minimailchimp.php'}
+                    })
+                            .done(function(msg) {
+                                $('#codigo').hide(function() {
+
+                                });
+                                $("#codigo >pre").text(msg);
+                                SyntaxHighlighter.highlight();
+                                $('#codigo').show(function() {
+
+                                });
+                            });
+                }
         </script>
-        
-         <div id="jkjk"  style="background-color:#bbb ">
-        pruebas pruebas
+
+        <div id="jkjk"  style="background-color:#bbb ">
+            pruebas pruebas
             <br>
             <br>
             <br>
@@ -72,10 +72,10 @@ $('#codigo').hide(function (){
         </div>
         <input type="button" value="ver codigo presentable" onclick="myCall()" />
         <div id="codigo">
-        <pre  class="brush: php;">
+            <pre  class="brush: php;">
 
-        </pre>
+            </pre>
         </div>
-       
+
     </body>
 </html>
