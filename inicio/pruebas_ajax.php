@@ -69,8 +69,12 @@ and open the template in the editor.
         </script>
 
         <div id="jkjk"  style="background-color:#bbb ">
-        Escriba una ruta de un codigo para verlo
-        ejemplo este archivo "inicio/pruebas_ajax.php";
+        Escriba una ruta de un codigo para verlo ejemplos:
+        <ul>
+            <li>"inicio/pruebas_ajax.php"</li>
+            <li>"class/minimailchimp.php"</li>
+            <li>"php/captura.php"</li>
+        </ul>
     
         </div>
         <input  type="text" id="url_nombre" name='url_blue' value="">
