@@ -43,38 +43,41 @@ and open the template in the editor.
     <body>
 
         <script>
+          
+                function borrar_crear_pre() {
+                    $("#codigo").empty();
+                    $("#codigo").append("<pre  class='brush: php;'></pre>");
 
-                function myCall() {
+                }
+                $(document.body).on('click', '#buscar', function() {
+                    var url = $('#url_nombre').val();
                     $.ajax({
                         type: "POST",
                         url: "../php/captura.php",
-                        data: {url_archivo: '../class/minimailchimp.php'}
+                        data: {url_archivo: '../' + url}
+
                     })
-                            .done(function(msg) {
-                                $('#codigo').hide(function() {
+                   .done(function(msg) {
+                       borrar_crear_pre();
+                       $("#codigo >pre").text(msg);
+                       SyntaxHighlighter.highlight();
 
-                                });
-                                $("#codigo >pre").text(msg);
-                                SyntaxHighlighter.highlight();
-                                $('#codigo').show(function() {
+                    });
 
-                                });
-                            });
-                }
+
+                });
         </script>
 
         <div id="jkjk"  style="background-color:#bbb ">
-            pruebas pruebas
-            <br>
-            <br>
-            <br>
-            <pre></pre>
+        Escriba una ruta de un codigo para verlo
+        ejemplo este archivo "inicio/pruebas_ajax.php";
+    
         </div>
-        <input type="button" value="ver codigo presentable" onclick="myCall()" />
-        <div id="codigo">
-            <pre  class="brush: php;">
+        <input  type="text" id="url_nombre" name='url_blue' value="">
+        <input type="button" value="ver codigo presentable" id='buscar' />
 
-            </pre>
+        <div id="codigo">
+        
         </div>
 
     </body>
