@@ -44,9 +44,7 @@ and open the template in the editor.
         $clase_limpia =  trim($clase,"<?php"); 
 ?>
 <pre class="brush: php;">
-<?php
-echo $clase
-?>
+
 </pre>
 
     </body>

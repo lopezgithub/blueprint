@@ -37,7 +37,7 @@ class minimailchimp {
     }
 
     public function mensaje($mensaje) {
-        echo '<b>' . $mensaje . '<b>';
+        echo '<b>' . $mensaje . '</b>';
     }
 
     
