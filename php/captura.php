@@ -5,12 +5,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-if(isset($_POST['login'])){
-    echo 'hecho';
-}
 
-//if(file_exists($_POST['url_archivo'])){
-//     echo file_get_contents($_POST['url_archivo']);
-// }else{
-//     echo 'NO exite el archivo'; 
-// }   
+
+if(file_exists($_POST['url_archivo'])){
+     echo file_get_contents($_POST['url_archivo']);
+ }else{
+     echo 'NO exite el archivo'; 
+ }   

@@ -3,12 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/sitios/github/blueprint/inicio/pruebas_ajax.php</file>
-            <file>file:/C:/xampp/htdocs/sitios/github/blueprint/class/capturas_envios/Envios_Captura.php</file>
-            <file>file:/C:/xampp/htdocs/sitios/github/blueprint/rutas/usuarios/login.php</file>
-            <file>file:/C:/xampp/htdocs/sitios/github/blueprint/login_facebook.html</file>
-            <file>file:/C:/xampp/htdocs/sitios/github/blueprint/rutas/css/inicio/home.css</file>
-            <file>file:/C:/xampp/htdocs/sitios/github/blueprint/rutas/index.html</file>
+            <file>file:/var/www/html/blue_print/blueprint/rutas/index_1.html</file>
+            <file>file:/var/www/html/blue_print/blueprint/php/captura.php</file>
+            <file>file:/var/www/html/blue_print/blueprint/rutas/APIs/facebook.js</file>
+            <file>file:/var/www/html/blue_print/blueprint/php/login.php</file>
+            <file>file:/var/www/html/blue_print/blueprint/rutas/index.html</file>
         </group>
     </open-files>
 </project-private>
